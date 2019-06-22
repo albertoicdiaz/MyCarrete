@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="acalvo">
+    <meta name="description" content="#">
+    <meta name="keywords" content="#">
+    <title>My Carrete</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/simple-line-icons.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/set1.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+</head>
+
+<body>
+    <div class="nav-menu">
+        <div class="bg transition">
+            <div class="container-fluid fixed">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="images/logo.png" style="height: 31px;width: 151px;" alt="">
+                            </a>    
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-menu"></span>
+              </button>
+                            <!-- <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Opciones
+                     <span class="icon-arrow-down"></span>
+                   </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                            <a class="dropdown-item" href="#">Salir de la sala</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div> -->
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="slider d-flex align-items-center">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-12">
+                    <div class="slider-title_box">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="slider-content_wrap">
+                                    <h1>Bienvenido a MyCarrete</h1>
+                                    <h5>Ingresa el nombre de la sala a crear o a unirse</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-md-10">
+                                <form class="form-wrap mt-4">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <input type="text" id="roomname" placeholder="Ingrese el nombre de la sala" class="btn-group1">
+                                        <!-- <input type="text" placeholder="New york" class="btn-group2"> -->
+                                        <a type="button" class="btn-form" onclick="crearSala();">Crear Sala</a>
+                                        <!-- <button type="submit" class="btn-form"><span class="icon-magnifier search-icon" onclick="makeCode();"></span>Crear Sala<i class="pe-7s-angle-right"></i></button> -->
+                                        <a type="button" class="btn-form"onclick="scanCode();">Escanear QR<a>
+                                        <!-- <button type="button" class="btn-form">Span</button> -->
+                                        <!-- <button type="submit" class="btn-form"><span class="icon-magnifier search-icon"></span>Unirse a la Sala<i class="pe-7s-angle-right"></i></button> -->
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="main-block dark-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright">
+                        <p>My Carrete</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/funciones.js"></script>
+    <script src="js/qrcode.js"></script>
+
+    <script>
+        $(window).scroll(function() {
+            // 100 = The point you would like to fade the nav in.
+
+            if ($(window).scrollTop() > 100) {
+
+                $('.fixed').addClass('is-sticky');
+
+            } else {
+
+                $('.fixed').removeClass('is-sticky');
+
+            };
+        });
+    </script>
+</body>
+
+</html>
